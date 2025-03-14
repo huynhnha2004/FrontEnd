@@ -1,0 +1,160 @@
+/* Gradient background mềm mại */
+body {
+    background: linear-gradient(to bottom right, #f3f4f9, #dde7f0);
+   
+  }
+  
+  /* Card với bóng đổ nhẹ */
+  .card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Tiêu đề có màu sắc nhẹ nhàng */
+  h2 {
+    color: #4a90e2;
+    font-weight: 600;
+  }
+  
+  /* Form input */
+  .input {
+    background-color: #f5f8ff;
+    border: 1px solid #dbe3f0;
+    border-radius: 8px;
+    padding: 0 12px;
+    color: #4a4a4a;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 4px rgba(74, 144, 226, 0.3);
+  }
+  
+  /* Checkbox */
+  .checkbox {
+    accent-color: #4a90e2;
+  }
+  
+  /* Nút Login */
+
+  
+  .btn:hover {
+    background-color: #357ab7;
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+  }
+  
+  /* Link Forgot Password */
+  .link {
+    color: #4a90e2;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .link:hover {
+    color: #357ab7;
+    text-decoration: underline;
+  }
+  
+
+  .card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  /* background-image: linear-gradient(90deg, #6a5acd, #7fffd4); */
+  border-radius: 10px;
+  z-index: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  opacity: 0;
+  transform: scale(1.2);
+}
+
+.card:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.card figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.card-body {
+  position: relative;
+  z-index: 1;
+  padding: 16px;
+  background-color: #fff;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.badge {
+  font-size: 0.875rem;
+  padding: 4px 8px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-secondary {
+  background-color: #6a5acd;
+  color: #fff;
+}
+
+.badge-outline {
+  border: 1px solid #6a5acd;
+  color: #6a5acd;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.badge-outline:hover {
+  background-color: #6a5acd;
+  color: #fff;
+}
+
+.card-actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.size-6 {
+  width: 24px;
+  height: 24px;
+}

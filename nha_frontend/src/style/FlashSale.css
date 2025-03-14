@@ -1,0 +1,88 @@
+.flash-sale {
+    background-color: #149b0d; /* Màu nền đỏ chủ đạo */
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #ffffff; /* Màu nền trắng cho sản phẩm */
+    border: 2px solid #d9534f; /* Viền đỏ nổi bật */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px); /* Hiệu ứng phóng to nhẹ khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.btn-add-cart {
+    background-color: #ffffff; /* Nút màu trắng */
+    color: #f9130b; /* Chữ màu đỏ */
+    border: 2px solid #d9534f; /* Viền đỏ */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-add-cart:hover {
+    background-color: #d9534f; /* Nút màu đỏ khi hover */
+    color: #ffffff; /* Chữ màu trắng khi hover */
+}
+
+.countdown-timer-wrapper {
+    display: flex;
+    justify-content: flex-end; /* Đẩy khung sang bên trái */
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .countdown-timer {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #d9534f;
+    max-width: 400px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+
+#countdown {
+    display: flex; /* Hiển thị các phần tử ngang hàng */
+    align-items: center;
+    justify-content: center;
+}
+
+.countdown-segment {
+    display: flex;
+    align-items: center;
+    margin: 0 5px; /* Khoảng cách giữa các phần tử */
+}
+
+.countdown-number {
+    font-size: 1.0rem; /* Tăng kích thước chữ */
+    font-weight: bold;
+    background-color: #f8f9fa; /* Nền sáng cho ô */
+    padding: 8px 12px; /* Khoảng đệm trong ô */
+    border-radius: 4px; /* Bo góc ô */
+    border: 2px solid #d9534f; /* Viền đỏ cho ô */
+    margin-right: 4px; /* Khoảng cách giữa số và nhãn */
+    min-width: 40px; /* Chiều rộng tối thiểu của ô */
+    text-align: center;
+}
+
+.countdown-label {
+    font-size: 0.8rem; /* Kích thước chữ nhỏ hơn */
+    color: #666; /* Màu xám cho nhãn */
+    text-transform: uppercase;
+}
+
+.product-price {
+    color: #d9534f; /* Màu đỏ đậm cho giá sản phẩm */
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.product-discount {
+    text-decoration: line-through;
+    color: #666; /* Màu xám cho giá cũ */
+}
